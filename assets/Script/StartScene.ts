@@ -14,11 +14,22 @@ export default class StartScene extends cc.Component {
     playBtn: cc.Button = null;
 
     start () {
+        // let self= this;
+        // this.playBtn.node.on("click",function(Button){
+        //     self.onPlayBtn();
+        // });
         
+        // this.playBtn.node.on("click",(Button)=>{
+        //     this.onPlayBtn();
+        // });
+        
+        this.playBtn.node.on("click",this.onPlayBtn);
     }
 
     onPlayBtn(){
-        console.log("playbtn ……");
+        cc.director.loadScene("GameScene",function(){
+            console.log("============<");
+        });
     }
 
     // update (dt) {}
