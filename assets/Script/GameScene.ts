@@ -18,6 +18,9 @@ export default class GameScene extends cc.Component {
     @property(cc.Prefab)
     uiPokerPrefab:cc.Prefab = null;
 
+    @property(cc.Node)
+    pokerContainer : cc.Node = null;
+
     private gameCtrl : GameCtrl;
     // LIFE-CYCLE CALLBACKS:
     start () {
@@ -26,7 +29,7 @@ export default class GameScene extends cc.Component {
          */
         this.gameCtrl = new GameCtrl();
         //我们需要先初始化预制
-        this.gameCtrl.loadPrefab(this.uiPokerPrefab);
+        this.gameCtrl.loadPrefab(this.pokerContainer,this.uiPokerPrefab);
         this.gameCtrl.start();
         this.label.string = "game==--------------";
     }
