@@ -7,8 +7,6 @@ export default class Helloworld extends cc.Component {
 
     onLoad(){
 
-        
-
     }
 
     start () {
