@@ -24,11 +24,14 @@ export default class GameCtrl{
         }
         console.log(this.pokers)
         //创建ui   通过数据
+        let i = 0;
         this.pokers.forEach(poker=>{
             let uiPocker = this.CreateUIPocker(poker);
             //我们创建出了每一个，下来每一个纸牌，我们需要将他们存起来
             // let someNode : cc.Node;
             // someNode.addChild(uiPocker.node)
+            i++;
+            uiPocker.node.setPosition(-500+i*50,0)
             this.pockerContainer.addChild(uiPocker.node);
         })
     }
