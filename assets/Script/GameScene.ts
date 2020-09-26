@@ -12,9 +12,6 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class GameScene extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
-
     @property(cc.Prefab)
     uiPokerPrefab:cc.Prefab = null;
 
@@ -31,7 +28,6 @@ export default class GameScene extends cc.Component {
         //我们需要先初始化预制
         this.gameCtrl.loadPrefab(this.pokerContainer,this.uiPokerPrefab);
         this.gameCtrl.start();
-        this.label.string = "game==--------------";
     }
 
     // update (dt) {}
