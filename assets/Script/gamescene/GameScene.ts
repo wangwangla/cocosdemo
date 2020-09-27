@@ -18,6 +18,7 @@ export default class GameScene extends cc.Component {
     @property(cc.Prefab)
     gameViewPrefab:cc.Prefab = null;
 
+    
     private gameCtrl : GameCtrl;
     // LIFE-CYCLE CALLBACKS:
     start () {
