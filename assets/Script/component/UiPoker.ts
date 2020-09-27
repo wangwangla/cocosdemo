@@ -1,5 +1,5 @@
-import { ESult } from "./Config";
-import Poker from "./Poker";
+import { ESult } from "../config/Config";
+import Poker from "../bean/Poker";
 
 /**
  * 展示牌的地方
@@ -67,8 +67,9 @@ export default class NewClass extends cc.Component {
     
     // update (dt) {}
     public init(pocker:Poker){
+        console.log("--------------<");
         // this.pokerLabel.string = "这个poker的值为"+pocker.point + "----->" + pocker.sult
-        this.pokerLabel.string = poker_map[pocker.point];
+        // this.pokerLabel.string = poker_map[pocker.point];
         if(pocker.sult==ESult.HongTao || pocker.sult ==ESult.FangKuai) this.pokerLabel.node.color = this.redTextColor;
         if(pocker.sult==ESult.HeiTao || pocker.sult ==ESult.MeiHua) this.pokerLabel.node.color = this.blackTextColor; 
         this.bigSuit.spriteFrame = this.bigSuits[pocker.sult];

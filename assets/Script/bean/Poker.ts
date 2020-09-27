@@ -1,4 +1,4 @@
-import { ESult } from "./Config";
+import { ESult } from "../config/Config"
 
 export default class Poker{
     public point:number = -1;
