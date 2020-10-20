@@ -13,22 +13,12 @@ export default class MainScene extends cc.Component {
     @property(cc.Button)
     playBtn: cc.Button = null;
 
+    onLoad(){
+
+    }
+
     start () {
-        // this.playBtn.node.on("click",this.startGame.bind(this));
-
-        // this.playBtn.node.on("click",function(Button){
-        //     // this 得不到
-        // })
-        // let self = this;
-        // this.playBtn.node.on("click",function(Button){
-        //     this.startGame();    
-        // })
         this.playBtn.node.on("click",this.startGame)
-
-        // this.playBtn.node.on("click",this.startGame.bind(this))
-
-        // this.playBtn.name.on("click",this.startGame,this);
-
     }
 
     startGame(){

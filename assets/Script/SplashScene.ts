@@ -8,24 +8,24 @@ export default class SplashScene extends cc.Component {
     @property(cc.Label)
     splash : cc.Label = null;
 
-    @property(cc.Button)
-    btn : cc.Button =  null;
-
     start () {
-        // init logic
-        // this.splash.string = "这是一个欢迎界面！"
+        // this.btn.node.on("click",function(){
+        //     cc.director.loadScene("MainScene",function(){
+        //         console.log("-->","========");
+        //     });
+        // });
+        this.splash.string = "这是欢迎页面！！！";
         // setTimeout(function(){
         //     cc.director.loadScene("MainScene",function(){
-        //     });
-        // },2000);      
-        // let student = {fristName:"chen",lastName : "kk"}
-        // this.showInfo(student)
-        this.btn.node.on("click",function(){
-            console.log("====================>");
-        });
-    }
+        //         console.log("-->","========");
+        //    });
+        // },2);
 
-    // showInfo(student:Person){
-    //     console.log(student.fristName + "============"+student.lastName)
-    // }
+        setTimeout(()=>{
+                cc.director.loadScene("MainScene",function(){
+                    console.log("-->","========");
+            });
+        },2000);
+        
+    }
 }
