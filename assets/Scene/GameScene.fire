@@ -76,21 +76,18 @@
       },
       {
         "__id__": 7
-      },
-      {
-        "__id__": 8
       }
     ],
     "_active": true,
     "_components": [
       {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      },
+      {
         "__id__": 10
-      },
-      {
-        "__id__": 11
-      },
-      {
-        "__id__": 12
       }
     ],
     "_prefab": null,
@@ -180,7 +177,7 @@
       "array": [
         0,
         0,
-        357.7387140151263,
+        363.80158090921196,
         0,
         0,
         0,
@@ -241,7 +238,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "gameLabel",
+    "_name": "New Sprite",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -257,15 +254,15 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 217,
+      "g": 133,
+      "b": 133,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240,
-      "height": 50.4
+      "width": 720,
+      "height": 1280
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -299,10 +296,10 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "5eI+JHTopDBqQDe4pxF+TQ"
+    "_id": "73cShnrWxAp5PQ1Cr/XY8X"
   },
   {
-    "__type__": "cc.Label",
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -316,24 +313,24 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_useOriginalSize": false,
-    "_string": "这是游戏界面",
-    "_N$string": "这是游戏界面",
-    "_fontSize": 40,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_styleFlags": 0,
-    "_underlineHeight": 0,
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "f15UEo9wVEZaE11TLTfQM7"
+    "_spriteFrame": {
+      "__uuid__": "e88b3ff2-1a8b-47d6-8c54-077ff7bc8172"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": {
+      "__uuid__": "188bdbc8-d73c-4277-b38c-7500b9ffd41f"
+    },
+    "_id": "8frj10G9xP6IVXnrjY+tkG"
   },
   {
     "__type__": "cc.Node",
@@ -368,8 +365,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        0,
+        -165.166,
+        -505.61,
         0,
         0,
         0,
@@ -392,77 +389,6 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "_id": "24HZVlEFBNqrHVoAXDu27q"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "pokerPrefab",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 2
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [],
-    "_prefab": {
-      "__id__": 9
-    },
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_trs": {
-      "__type__": "TypedArray",
-      "ctor": "Float64Array",
-      "array": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
-    "_id": "f7EYU9rwZIx6vOaDvNlciv"
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 8
-    },
-    "asset": {
-      "__uuid__": "58e93218-0dac-4a20-bea1-bcb0100dd8b7"
-    },
-    "fileId": "f7EYU9rwZIx6vOaDvNlciv",
-    "sync": false
   },
   {
     "__type__": "cc.Canvas",
@@ -517,13 +443,10 @@
     },
     "_enabled": true,
     "pokerPrefab": {
-      "__uuid__": "25151630-c90d-4b95-a0ca-06ecbc96e3cf"
+      "__uuid__": "58e93218-0dac-4a20-bea1-bcb0100dd8b7"
     },
     "container": {
       "__id__": 7
-    },
-    "label": {
-      "__id__": 6
     },
     "_id": "91Ynt9bAdLlImZnnTC5xsK"
   }

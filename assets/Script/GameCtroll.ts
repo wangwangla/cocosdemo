@@ -23,11 +23,12 @@ export default class GameCtrl{
         
         for(let i = 0;i<this.pokers.length;i++){
             let uipokerNode = cc.instantiate(this.pokerPrefab);
-            console.log("<_-----------------"+uipokerNode);
             let uiPoker:UiPoker = uipokerNode.getComponent(UiPoker);
-            console.log("<_-----------------"+uipokerNode);
-            uiPoker.start();    
-
+            uiPoker.init(this.pokers[i])
+            uiPoker.node.position.x = 1000;
+            uiPoker.node.setPosition(-720+i*150,0);
+            container.addChild(uiPoker.node);
+            container.setPosition(100,100)
         }
             
      }
