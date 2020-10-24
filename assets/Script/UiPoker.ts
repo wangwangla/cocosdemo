@@ -66,9 +66,7 @@ export default class UiPoker extends cc.Component{
             this.bigSuit.spriteFrame = this.bigSuit[poker.point];
         }
         this.smallSuit.spriteFrame = this.smallSuitSpriteList[poker.suit];
-        this.zbgFace.node.active = true
-        
-    
+   
     }
 
     start(){

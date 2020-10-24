@@ -6,15 +6,8 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class GameScene extends cc.Component {
     @property(cc.Prefab)
-    pokerPrefab:cc.Prefab;
-    @property(cc.Node)
-    container:cc.Node;
-    @property(cc.Prefab)
     private gameViewUI:cc.Prefab;
-
     private gameView : GameView = null;
-
-
     private g_gameCtrl : GameCtrl = null;
 
     start () {
@@ -23,6 +16,6 @@ export default class GameScene extends cc.Component {
         this.gameView = gameViewUINode.getComponent(GameView);
         this.node.addChild(this.gameView.node);
         this.g_gameCtrl = new GameCtrl();
-        this.g_gameCtrl.start(this.pokerPrefab,this.container);
+        this.g_gameCtrl.start(this.gameView);
     }
 }
